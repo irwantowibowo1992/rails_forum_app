@@ -1,0 +1,21 @@
+<% @threads.each do |thread| %>
+<div class="thread my-3">
+  <h1 class="is-size-3"><%= link_to thread.title.titleize, forum_thread_path(thread) %></h1>
+  <div class="mb-4 has-text-grey">
+    <%= I18n.l(thread.created_at.to_date) %> Oleh <%= thread.user.name %>
+  </div>
+
+  <div class="mb-4">
+    <%= thread.content %>
+  </div>
+
+  <div class="is-flex is-justify-content-end">
+    <span class="icon-text">
+      <span class="icon">
+        <i class="fa-solid fa-comment"></i>
+      </span>
+      <span><%= thread.forum_posts.count %> Obrolan</span>
+    </span>
+  </div>
+</div>
+<% end %>

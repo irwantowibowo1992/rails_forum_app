@@ -1,0 +1,29 @@
+<div class="card mt-2">
+  <div class="card-content">
+    <h1 class="title is-5"><%= @thread.title.titleize %></h1>
+    <div class="content">
+      <%= @thread.content %>
+    </div>
+    <div class="is-flex is-justify-content-end mb-1 has-text-grey">
+      <span class="is-size-7"><%= I18n.l(@thread.created_at.to_date) %> Oleh <%= @thread.user.name %></span>
+    </div>
+
+    <% if @thread.forum_posts.any? %>
+      <h2 class="title is-6 has-text-centered my-6">List Obrolan</h2>
+
+      <% @thread.forum_posts.each do |post| %>
+        <div class="thread mt-4">
+          <div class="mb-1">
+            <%= post.content %>
+          </div>
+
+          <div class="has-text-grey">
+            <span class="is-size-7">
+              <%= I18n.l(post.created_at.to_date) %>, <%= post.user.name %>
+            </span>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
