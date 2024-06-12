@@ -1,0 +1,20 @@
+<%= form_for @thread, url: forum_thread_index_path do |f| %>
+  <div class="is-flex is-flex-direction-column is-justify-content-center is-align-content-center">
+    <h3 class="is-size-3 has-text-centered mb-2">New Thread</h3>
+
+    <div class="field">
+      <%= f.label "Title", class: "label" %>
+      <div class="control">
+        <%= f.text_field :title, class: "input", placeholder: "input title" %>
+      </div>
+    </div>
+    <div class="field mt-4">
+      <%= f.label "Content", class: "label" %>
+      <div class="control">
+        <%= f.text_area :content, class: "textarea" %>
+      </div>
+    </div>
+
+    <button class="button is-link">Submit</button>
+  </div>
+<% end %>

@@ -1,3 +1,5 @@
+<%= link_to "Create New Thread", new_forum_thread_path, class: 'button is-success my-4' %>
+
 <% @threads.each do |thread| %>
 <div class="thread my-3">
   <h1 class="is-size-3"><%= link_to thread.title.titleize, forum_thread_path(thread) %></h1>

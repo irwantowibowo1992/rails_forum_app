@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67175e6a-9387-45d3-8c7c-f170f31bcd94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/99a07527-f7b9-4c35-b143-6241947d4e2a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/99a07527-f7b9-4c35-b143-6241947d4e2a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/99a07527-f7b9-4c35-b143-6241947d4e2a/storage_v2/_src_/database/forum_app_development._8wi8g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/99a07527-f7b9-4c35-b143-6241947d4e2a/storage_v2/_src_/database/forum_app_development._8wi8g/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/forum_post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/forum_post.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/forum_thread_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/forum_thread_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/forum_thread/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/forum_thread/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "1-add-counter-cache",
+    "git-widget-placeholder": "2-new-thread",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/irwanto/PEMROGRAMAN/RUBY/forum_app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -126,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718001007824</updated>
       <workItem from="1718001008861" duration="14418000" />
-      <workItem from="1718141911089" duration="10654000" />
+      <workItem from="1718141911089" duration="12962000" />
     </task>
     <servers />
   </component>
