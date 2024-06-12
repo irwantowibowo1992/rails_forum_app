@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_10_075007) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_12_031218) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -22,13 +22,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_10_075007) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "forum_thread", force: :cascade do |t|
+  create_table "forum_threads", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.integer "user_id"
     t.integer "sticky_order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "forum_posts_count", default: 0
   end
 
   create_table "users", force: :cascade do |t|
